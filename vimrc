@@ -20,6 +20,8 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
+Bundle 'amiorin/vim-project'
+
 " The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
 " scripts on GitHub repos
@@ -38,6 +40,9 @@ filetype plugin indent on     " required
 
 
 
+
+" Clipboard
+set clipboard=unnamedplus
 
 
 " Цветовая схема
@@ -131,3 +136,11 @@ map <F3> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " PHP code coverage plugin settings
 let g:phpqa_messdetector_autorun = 0
 let g:phpqa_codesniffer_autorun = 0
+
+" Projects plugin settings settings
+let g:project_use_nerdtree = 1
+set rtp+=~/.vim/bundle/vim-project/
+call project#rc("/www")
+
+" Projects
+Project 'soneta', 'Soneta'
