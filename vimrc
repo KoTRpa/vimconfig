@@ -103,6 +103,11 @@ set fdm=syntax
 " Автоматическое открытие сверток при заходе в них
 set foldopen=all
 
+augroup vimrc
+  au BufReadPre * setlocal foldmethod=syntax
+  au BufWinEnter * if &fdm == 'syntax' | setlocal foldmethod=manual | endif
+augroup END
+
 "Автоматическое переключение рабочей папки
 set autochdir
 
