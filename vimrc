@@ -101,11 +101,11 @@ set foldenable
 set fdm=syntax
 
 " Автоматическое открытие сверток при заходе в них
-set foldopen=all
+" set foldopen=all
 
 augroup vimrc
-  au BufReadPre * setlocal foldmethod=syntax
-  au BufWinEnter * if &fdm == 'syntax' | setlocal foldmethod=manual | endif
+  au BufReadPre * setlocal foldmethod=indent
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
 augroup END
 
 "Автоматическое переключение рабочей папки
@@ -137,6 +137,9 @@ map <F2> :cd<CR>:FufTaggedFile<CR>
 " this will go to function definition of 
 " the current keyword with F3 in a new tab 
 map <F3> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+" copy all
+map <C-a> :%y+<CR>
 
 " PHP code coverage plugin settings
 let g:phpqa_messdetector_autorun = 0
