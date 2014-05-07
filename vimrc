@@ -1,14 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set nocompatible              " be iMproved, required
-
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" alternatively, pass a path where Vundle should install bundles
-"let path = '~/some/path/here'
-"call vundle#rc(path)
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
@@ -25,7 +20,7 @@ Bundle 'amiorin/vim-project'
 " The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
 " scripts on GitHub repos
-
+call vundle#end()
 filetype plugin indent on     " required
 "
 " Brief help
@@ -144,11 +139,3 @@ map <C-a> :%y+<CR>
 " PHP code coverage plugin settings
 let g:phpqa_messdetector_autorun = 0
 let g:phpqa_codesniffer_autorun = 0
-
-" Projects plugin settings settings
-let g:project_use_nerdtree = 1
-set rtp+=~/.vim/bundle/vim-project/
-call project#rc("/www")
-
-" Projects
-Project 'soneta', 'Soneta'
