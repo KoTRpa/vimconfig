@@ -15,7 +15,6 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
-Bundle 'amiorin/vim-project'
 
 " The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
@@ -70,6 +69,9 @@ syntax on
 " Info on bottom corner
 set showcmd
 
+" Statusbar
+set laststatus=2
+
 " Search options
 set hlsearch
 set incsearch
@@ -98,11 +100,6 @@ set fdm=syntax
 " Автоматическое открытие сверток при заходе в них
 " set foldopen=all
 
-augroup vimrc
-  au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
-augroup END
-
 "Автоматическое переключение рабочей папки
 set autochdir
 
@@ -110,9 +107,6 @@ set autochdir
 set nobackup
 set nowritebackup
 set noswapfile
-
-" Nerd tree autoload
-autocmd vimenter * NERDTree
 
 " Автоматическое закрытие скобок
 imap [ []<LEFT>
@@ -139,24 +133,3 @@ map <C-a> :%y+<CR>
 " PHP code coverage plugin settings
 let g:phpqa_messdetector_autorun = 0
 let g:phpqa_codesniffer_autorun = 0
-
-" Toggle Vexplore with Ctrl-E
-function! ToggleVExplorer()
-  if exists("t:expl_buf_num")
-      let expl_win_num = bufwinnr(t:expl_buf_num)
-      if expl_win_num != -1
-          let cur_win_nr = winnr()
-          exec expl_win_num . 'wincmd w'
-          close
-          exec cur_win_nr . 'wincmd w'
-          unlet t:expl_buf_num
-      else
-          unlet t:expl_buf_num
-      endif
-  else
-      exec '1wincmd w'
-      Vexplore
-      let t:expl_buf_num = bufnr("%")
-  endif
-endfunction
-map <silent> <C-E> :call ToggleVExplorer()<CR>
