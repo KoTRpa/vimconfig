@@ -10,7 +10,7 @@ Bundle 'gmarik/Vundle.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
-Bundle 'joonty/vim-phpqa'
+" Bundle 'joonty/vim-phpqa'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
@@ -32,7 +32,8 @@ filetype plugin indent on     " required
 " NOTE: comments after Bundle commands are not allowed.
 
 
-
+" Netrw mouse bindings disable
+let g:netrw_mousemaps=0
 
 
 " Clipboard
