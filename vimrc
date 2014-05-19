@@ -88,9 +88,10 @@ set cursorline
 set shiftwidth=4
 
 " Размеры табуляций
-set expandtab
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
+set expandtab
 set smarttab
 
 " Включаем фолдинг (сворачивание участков кода)
