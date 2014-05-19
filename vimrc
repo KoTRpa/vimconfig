@@ -88,6 +88,7 @@ set cursorline
 set shiftwidth=4
 
 " Размеры табуляций
+set expandtab
 set tabstop=4
 set softtabstop=4
 set smarttab
@@ -96,7 +97,7 @@ set smarttab
 set foldenable
 
 " Сворачивание по отступам
-set fdm=syntax
+set fdm=manual
 
 " Автоматическое открытие сверток при заходе в них
 " set foldopen=all
