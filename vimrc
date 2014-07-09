@@ -15,6 +15,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
+Bundle 'tpope/vim-haml'
 
 " The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
