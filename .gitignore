@@ -1,6 +1,7 @@
 *
 !.gitignore
 !vimrc
+!powerline-fonts-master.zip
 !/syntax
 !/plugin
 !bundle/Vundel.vim

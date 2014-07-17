@@ -18,6 +18,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'msanders/snipmate.vim'
 
 " The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
@@ -46,7 +48,7 @@ set clipboard=unnamedplus
 " Цветовая схема
 colorscheme railscasts2
 if has("gui_running")
-    set guifont=DejaVu\ Sans\ Mono\ 12
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 endif
 
 " Поддержка шорткатов при включенной русской локали
@@ -113,6 +115,11 @@ set autochdir
 set nobackup
 set nowritebackup
 set noswapfile
+
+" Airline
+let g:airline_section_c='%F'
+let g:airline_powerline_fonts=1
+let g:airline#extensions#syntastic#enabled = 1
 
 " Автоматическое закрытие скобок
 imap [ []<LEFT>
