@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='ftp://intoto.in.studio38.ru//www/bitrix/templates/.default/components/bitrix/'
-let g:netrw_dirhist_2='ftp://intoto.in.studio38.ru//www/bitrix/templates/.default/components/bitrix/catalog.section/'
-let g:netrw_dirhist_3='ftp://intoto.in.studio38.ru//www/bitrix/templates/.default/components/bitrix/catalog.section/shop_items_def/'
-let g:netrw_dirhist_4='ftp://intoto.in.studio38.ru//www/'
-let g:netrw_dirhist_5='ftp://intoto.in.studio38.ru//www/ajax/'
-let g:netrw_dirhist_6='ftp://intoto.in.studio38.ru//www/'
-let g:netrw_dirhist_7='ftp://intoto.in.studio38.ru//www/ajax/'

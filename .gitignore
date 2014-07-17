@@ -1,0 +1,10 @@
+*
+!.gitignore
+!vimrc
+!/syntax
+!/plugin
+!bundle/Vundel.vim
+!/colors
+!/ftplugin
+!/indent
+!/plugin
