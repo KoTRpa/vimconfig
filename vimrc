@@ -1,5 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible							" be iMproved, required
+filetype off									" required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -20,18 +20,19 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'msanders/snipmate.vim'
+Plugin 'xsbeats/vim-blade'
 
 " The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
 " scripts on GitHub repos
 call vundle#end()
-filetype plugin indent on     " required
+filetype plugin indent on			" required
 "
 " Brief help
-" :PluginList          - list configured bundles
-" :PluginInstall(!)    - install (update) bundles
+" :PluginList					 - list configured bundles
+" :PluginInstall(!)		 - install (update) bundles
 " :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused bundles
+" :PluginClean(!)			 - confirm (or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Plugin commands are not allowed.
@@ -48,7 +49,7 @@ set clipboard=unnamedplus
 " Цветовая схема
 colorscheme railscasts2
 if has("gui_running")
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 endif
 
 " Поддержка шорткатов при включенной русской локали
