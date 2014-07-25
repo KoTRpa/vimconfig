@@ -117,7 +117,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" Airline
+" Airline bar
 let g:airline_section_c='%F'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#syntastic#enabled = 1
@@ -145,3 +145,6 @@ map <F3> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <C-a> :%y+<CR>
 
 nmap <F8> :TagbarToggle<CR>
+
+" blade snippets support
+autocmd BufRead,BufNewFile *.blade.php set filetype=blade.php.html
