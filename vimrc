@@ -21,6 +21,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'msanders/snipmate.vim'
 Plugin 'xsbeats/vim-blade'
+Plugin 'mattn/emmet-vim'
 
 " The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
